@@ -27,7 +27,7 @@ var http = require('http');
                         });
                         request(AMULYAM_LOGOUT_URL, function (logout_error, logout_resp, logout_html) {
                             if (!logout_error && logout_resp.statusCode == 200) {
-                                console.log("Logged Out");
+                                console.log("Logged Out!");
                             } else
                               {
                                 console.log("Error navigating to "+AMULYAM_LOGOUT_URL+"  :   "+JSON.stringify(logout_error)); 
