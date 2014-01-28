@@ -14,7 +14,7 @@ var http = require('http');
 
     console.log("AMULYAM_USERNAME:"+AMULYAM_USERNAME);
     console.log("AMULYAM_PASSWORD:"+AMULYAM_PASSWORD);
-    
+
     var dailyLoginWorker = function(){
         console.log("Trying to login now");
         request.post(AMULYAM_LOGIN_URL,{ form: { mobile: AMULYAM_USERNAME ,   password: AMULYAM_PASSWORD}},
@@ -48,8 +48,12 @@ var http = require('http');
             }
         );
     };
-  dailyLoginWorker();
-  if (interval > 0) setInterval(dailyLoginWorker, interval);
+    
+    if(AMULYAM_USERNAME && AMULYAM_PASSWORD) 
+    {
+        dailyLoginWorker();
+        if (interval > 0) setInterval(dailyLoginWorker, interval);
+    }
 }) ();
 var port = Number(process.env.PORT || 5000);
 http.createServer(function (req, res) {
