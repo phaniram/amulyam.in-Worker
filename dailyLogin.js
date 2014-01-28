@@ -12,6 +12,9 @@ var http = require('http');
     var AMULYAM_HOME_URL = 'http://www.amulyam.in/';
     var AMULYAM_LOGOUT_URL = 'http://www.amulyam.in/logout.do';
 
+    console.log("AMULYAM_USERNAME:"+AMULYAM_USERNAME);
+    console.log("AMULYAM_PASSWORD:"+AMULYAM_PASSWORD);
+    
     var dailyLoginWorker = function(){
         console.log("Trying to login now");
         request.post(AMULYAM_LOGIN_URL,{ form: { mobile: AMULYAM_USERNAME ,   password: AMULYAM_PASSWORD}},
