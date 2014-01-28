@@ -1,0 +1,27 @@
+{
+  "name": "amulyam.in-Worker",
+  "version": "0.0.1",
+  "description": "Amulyam Workers (Daily Login Worker)",
+  "main": "dailyLogin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/phaniram/amulyam.in-Worker.git"
+  },
+  "keywords": [
+    "amulyam",
+    "dailylogin"
+  ],
+  "author": "Maturu Srinivas Phani Ram",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/phaniram/amulyam.in-Worker/issues"
+  },
+  "dependencies": {
+    "request": "~2.33.0",
+    "cheerio": "~0.13.1",
+    "http": "0.0.0"
+  }
+}
