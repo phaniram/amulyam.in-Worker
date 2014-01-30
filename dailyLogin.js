@@ -87,7 +87,6 @@ else {
         res.writeHead(200, {
             'Content-Type': 'text/plain'
         });
-        res.end('Hello from Amulayam Daily Login Worker \n');
+        res.end('Hello from Amulayam Daily Login Worker : '+cluster.worker.id);
     }).listen(port);
-    console.log('Worker ' + cluster.worker.id + ' running!');
 }
