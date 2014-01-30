@@ -22,6 +22,7 @@
   "dependencies": {
     "request": "~2.33.0",
     "cheerio": "~0.13.1",
-    "http": "0.0.0"
+    "http": "0.0.0",
+    "cluster": "~0.7.7"
   }
 }
