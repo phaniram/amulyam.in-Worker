@@ -1,5 +1,5 @@
-// Include the cluster module
-var cluster = require('cluster');
+              require('newrelic');
+var cluster = require('cluster'); // Include the cluster module
 
 // Code to run if we're in the master process
 if (cluster.isMaster) {
